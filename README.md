@@ -18,7 +18,7 @@ Copy everything in 'out' folder to SD root and run!
 
 **Features:**
 
-* Ninjhax/MSET/Spider/A9LH/B9S support!
+* Ninjhax/MSET/Spider/A9LH/Sighax support!
 
 * Emunand/Patched Sysnand (with '.:Rei' version string)
 
