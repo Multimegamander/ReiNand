@@ -11,13 +11,14 @@ You'll need armips and bin2c added to your Path. [HERE](https://reisyukaku.org/d
 
     make - Compiles All. (launcher and a9lh)
     make a9lh - Compiles arm9loaderhax payload
+    make b9s - Compiles boot9strap payload
 
 Copy everything in 'out' folder to SD root and run!
 
 
 **Features:**
 
-* Ninjhax/MSET/Spider/A9LH support!
+* Ninjhax/MSET/Spider/A9LH/B9S support!
 
 * Emunand/Patched Sysnand (with '.:Rei' version string)
 
