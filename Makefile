@@ -30,6 +30,9 @@ all: launcher a9lh loader sighax
 .PHONY: a9lh
 a9lh: $(dir_out)/arm9loaderhax.bin
 
+.PHONY: sighax
+sighax: $(dir_out)/boot.firm
+
 .PHONY: launcher
 launcher: $(dir_out)/$(name).dat 
 
@@ -47,6 +50,11 @@ clean:
 $(dir_out)/arm9loaderhax.bin: $(dir_build)/main.bin
 	@mkdir -p "$(dir_out)"
 	@cp -av $< $@
+	
+.PHONY: $(dir_out)/boot.firm
+$(dir_out)/boot.firm:  $(dir_build)/main.elf
+	@mkdir -p "$(@D)"
+	@firmtool build $@ -D $^ -A 0x18180000 0x18000000 -C XDMA NDMA -i
 
 .PHONY: $(dir_out)/$(name).dat
 $(dir_out)/$(name).dat: $(dir_build)/main.bin $(dir_out)/rei/ $(dir_out)/rei/patches/patches.dat
