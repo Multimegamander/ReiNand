@@ -11,7 +11,7 @@ You'll need armips and bin2c added to your Path. [HERE](https://reisyukaku.org/d
 
     make - Compiles All. (launcher and a9lh)
     make a9lh - Compiles arm9loaderhax payload
-    make b9s - Compiles boot9strap payload
+    make sighax - Compiles sighax payload
 
 Copy everything in 'out' folder to SD root and run!
 
