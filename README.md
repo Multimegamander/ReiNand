@@ -9,7 +9,7 @@
 
 You'll need armips and bin2c added to your Path. [HERE](https://reisyukaku.org/downloads/buildtools.zip) are the pre-compiled binaries for Windows.
 
-    make - Compiles All. (launcher and a9lh)
+    make - Compiles All. (launcher, a9lh, and sighax)
     make a9lh - Compiles arm9loaderhax payload
     make sighax - Compiles sighax payload
 
